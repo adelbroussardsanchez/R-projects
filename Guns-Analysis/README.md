@@ -1,97 +1,92 @@
-# Resume Callback Bias Analysis (R)
+# Gun Control Laws and Gun-Related Crime Analysis (R)
 
 ## Overview
-This project uses R to analyze factors influencing the likelihood of receiving a callback after submitting a resume. The primary objective is to evaluate whether race and/or gender has a statistically significant effect on callback rates in job applications. The analysis combines exploratory data analysis with predictive modeling and multiple model validation techniques.
+This was my first data analysis project and focused on exploring the relationship between gun control laws and gun-related crime rates across the United States. The goal was to test my own hypothesis that stricter gun laws are linked to lower levels of gun-related crime. I used statistical analysis and visualizations to explore patterns and relationships in the data.
 
-The dataset used in this project is publicly available and can be accessed using this link: https://vincentarelbundock.github.io/Rdatasets/doc/openintro/resume.html
+The dataset used in this project is publicly available using this link: https://search.r-project.org/CRAN/refmans/AER/html/Guns.html
 
 ---
 
-## Project Objectives
-- Assess whether race and gender impact resume callback rates  
-- Explore relationships between applicant characteristics and outcomes  
-- Build and compare predictive models using multiple validation strategies  
-- Apply rigorous statistical techniques to support or reject initial hypotheses  
+## Project Goals
+- Explore how gun laws relate to gun-related crime rates  
+- Test whether stricter laws are associated with fewer crimes  
+- Practice data cleaning, visualization, and regression analysis  
+- Learn how to evaluate assumptions behind statistical models  
 
 ---
 
 ## Contents
 
 ### Dataset
-- **Description**  
-  Overview of the resume audit dataset, including structure, source, and scope.
+- **Dataset Description**  
+  Overview of the dataset, including where it came from and what it measures.
 
-- **Data Cleaning**  
-  Handling missing values, recoding categorical variables, and ensuring consistency for modeling.
+- **Cleaning the Data**  
+  Steps taken to prepare the data for analysis, including fixing inconsistencies and handling missing values.
 
 - **Variable Description**  
-  Detailed explanation of response variables, categorical predictors (e.g., race, gender), and numerical predictors.
+  Explanation of the main variables, including gun law measures and crime rates.
 
 ---
 
 ### Purpose and Expectations
-- Test for evidence of bias in hiring callbacks  
-- Expectation that race and/or gender may influence callback probability  
-- Emphasis on statistical validity rather than anecdotal inference  
+The purpose of this project was to test a clear hypothesis: that stricter gun laws lead to fewer gun-related crimes. I expected to see a negative relationship between law strictness and crime rates, but relied on the analysis to evaluate whether that expectation held up.
 
 ---
 
-## Data Analysis
+## Analysis
 
-### Categorical Variable Analysis
+### Categorical Variables
 - **Bar Plots**  
-  Visual comparison of callback rates across categorical groups.
+  Used to compare crime rates across different categories.
+
+- **Contingency Tables**  
+  Used to examine how categorical variables relate to one another.
+
+- **Boxplots**  
+  Used to compare distributions of crime rates across groups.
 
 - **Heatmaps**  
-  Interaction effects between categorical variables and callback outcomes.
+  Used to visualize patterns across states and categories.
 
 ---
 
-### Numerical Variable Analysis
-- **Correlation Matrices**  
-  Identification of relationships between numerical predictors.
+### Numerical Variables
+- **Scatter Plots and Correlation Matrices**  
+  Used to explore relationships between numerical variables.
 
-- **Histograms**  
-  Distribution analysis of continuous variables.
+- **Summary Statistics**  
+  Used to understand averages and variability in the data.
 
-- **Density Plots**  
-  Smoothed comparisons across groups to highlight structural differences.
+- **Histograms and Density Plots**  
+  Used to examine how crime rates are distributed.
+
+- **Shapiro–Wilk Test**  
+  Used to check whether variables followed a normal distribution.
+
+- **Q–Q Plots**  
+  Used as a visual check of distribution assumptions.
 
 ---
 
-## Predictive Modeling
+## Modeling
 
-### Best Subset Selection
-- Identification of optimal predictor combinations based on model performance.
-
-### Validation Techniques
-- **Validation Set Approach**  
-  Train/test split to evaluate generalization error.
-
-- **Leave-One-Out Cross-Validation (LOOCV)**  
-  High-bias reduction method for small-sample robustness.
-
-- **K-Fold Cross-Validation**  
-  Balanced bias–variance tradeoff for model comparison.
+### Multiple Regression
+Built regression models to see how multiple factors together relate to gun-related crime rates and to understand the relative impact of gun laws.
 
 ---
 
 ## Summary
-- Consolidated findings across exploratory analysis and modeling  
-- Interpretation of statistical results in the context of hiring bias  
-- Discussion of limitations and assumptions  
+This project helped me connect a real-world policy question to data analysis. The results show how gun laws and crime rates relate in the data, while also highlighting the limits of what can be concluded from observational data.
 
 ---
 
-## Tools and Technologies
+## Tools Used
 - **Language:** R  
-- **Libraries:** openintro, ggplot2, leaps, caret 
-- **Methods:** EDA, regression modeling, cross-validation  
+- **Main Packages:** AER, ggplot2, base R  
+- **Techniques:** data cleaning, visualization, hypothesis testing, regression  
 
 ---
 
 ## Works Cited
-Full list of academic and data sources referenced in the analysis.
-
----
-
+List of data sources and references used in the analysis.
