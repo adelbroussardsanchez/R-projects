@@ -1,17 +1,17 @@
-# Resume Callback Bias Analysis (R)
+# Resume Callback Analysis (R)
 
 ## Overview
-This project uses R to analyze factors influencing the likelihood of receiving a callback after submitting a resume. The primary objective is to evaluate whether race and/or gender has a statistically significant effect on callback rates in job applications. The analysis combines exploratory data analysis with predictive modeling and multiple model validation techniques.
+In this project, I used R to analyze a resume audit dataset to see what factors affect whether a job application receives a callback. The main goal was to find out if race and/or gender influence callback rates. I combined data cleaning, visual analysis, and modeling to better understand patterns in the data and test these questions statistically.
 
-The dataset used in this project is publicly available and can be accessed using this link: https://vincentarelbundock.github.io/Rdatasets/doc/openintro/resume.html
+The dataset used in this project is publicly available using this link: https://vincentarelbundock.github.io/Rdatasets/doc/openintro/resume.html
 
 ---
 
-## Project Objectives
-- Assess whether race and gender impact resume callback rates  
-- Explore relationships between applicant characteristics and outcomes  
-- Build and compare predictive models using multiple validation strategies  
-- Apply rigorous statistical techniques to support or reject initial hypotheses  
+## Project Goals
+- See whether race or gender affects callback rates  
+- Explore patterns in resume characteristics and outcomes  
+- Build models to predict callbacks  
+- Check how well those models perform using different validation methods  
 
 ---
 
@@ -19,78 +19,72 @@ The dataset used in this project is publicly available and can be accessed using
 
 ### Dataset
 - **Description**  
-  Overview of the resume audit dataset, including structure, source, and scope.
+  Overview of the dataset and what information it contains.
 
-- **Data Cleaning**  
-  Handling missing values, recoding categorical variables, and ensuring consistency for modeling.
+- **Cleaning the Data**  
+  Steps taken to clean the data, handle missing values, and prepare variables for analysis.
 
 - **Variable Description**  
-  Detailed explanation of response variables, categorical predictors (e.g., race, gender), and numerical predictors.
+  Explanation of the main variables, including callback outcome, race, gender, and other resume features.
 
 ---
 
 ### Purpose and Expectations
-- Test for evidence of bias in hiring callbacks  
-- Expectation that race and/or gender may influence callback probability  
-- Emphasis on statistical validity rather than anecdotal inference  
+The purpose of this project was to test whether race and gender play a role in hiring callbacks. Based on prior research, I expected to see differences in callback rates across groups, but relied on the data to confirm or reject that assumption.
 
 ---
 
 ## Data Analysis
 
-### Categorical Variable Analysis
+### Categorical Variables
 - **Bar Plots**  
-  Visual comparison of callback rates across categorical groups.
+  Used to compare callback rates across different groups.
 
 - **Heatmaps**  
-  Interaction effects between categorical variables and callback outcomes.
+  Used to explore how combinations of categorical variables relate to callbacks.
 
 ---
 
-### Numerical Variable Analysis
+### Numerical Variables
 - **Correlation Matrices**  
-  Identification of relationships between numerical predictors.
+  Used to see how numerical variables relate to one another.
 
 - **Histograms**  
-  Distribution analysis of continuous variables.
+  Used to understand the distribution of numeric variables.
 
 - **Density Plots**  
-  Smoothed comparisons across groups to highlight structural differences.
+  Used to compare distributions across groups in a smoother way.
 
 ---
 
-## Predictive Modeling
+## Modeling
 
 ### Best Subset Selection
-- Identification of optimal predictor combinations based on model performance.
+Tested different combinations of variables to find which ones best explained callback outcomes.
 
-### Validation Techniques
+### Model Validation
 - **Validation Set Approach**  
-  Train/test split to evaluate generalization error.
+  Split the data into training and testing sets to evaluate performance.
 
 - **Leave-One-Out Cross-Validation (LOOCV)**  
-  High-bias reduction method for small-sample robustness.
+  Tested models by training on all but one observation at a time.
 
 - **K-Fold Cross-Validation**  
-  Balanced bias–variance tradeoff for model comparison.
+  Evaluated models by splitting the data into multiple groups to balance accuracy and stability.
 
 ---
 
 ## Summary
-- Consolidated findings across exploratory analysis and modeling  
-- Interpretation of statistical results in the context of hiring bias  
-- Discussion of limitations and assumptions  
+This project brings together data exploration and modeling to better understand hiring outcomes. The results highlight which variables matter most and whether race and gender show meaningful effects on callbacks, while also acknowledging the limits of the data.
 
 ---
 
-## Tools and Technologies
+## Tools Used
 - **Language:** R  
-- **Libraries:** openintro, ggplot2, leaps, caret 
-- **Methods:** EDA, regression modeling, cross-validation  
+- **Main Packages:** openintro, ggplot2, leaps, caret  
+- **Techniques:** data cleaning, visualization, regression, model validation  
 
 ---
 
 ## Works Cited
-Full list of academic and data sources referenced in the analysis.
-
----
+List of sources and references used in the analysis.
